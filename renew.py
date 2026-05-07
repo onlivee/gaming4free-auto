@@ -5,8 +5,8 @@ from seleniumbase import SB
 # ==========================================
 # 💡 核心配置
 # ==========================================
-TARGET_URL = "https://game4free.net/woairenqi"
-MC_USERNAME = "renqi"
+TARGET_URL = os.getenv("TARGET_URL", "")
+MC_USERNAME = os.getenv("MC_USERNAME", "")
 
 TG_TOKEN = os.getenv("TG_TOKEN", "")
 TG_CHAT = os.getenv("TG_CHAT_ID", "")
